@@ -1,0 +1,6 @@
+-- SQLite
+-- Editano o campo BIRTH_DATE com nome Carolina na tabela CUSTOMERS
+UPDATE CUSTOMERS SET BIRTH_DATE = '1986-06-19' WHERE ID = 4;
+
+
+SELECT * FROM CUSTOMERS;

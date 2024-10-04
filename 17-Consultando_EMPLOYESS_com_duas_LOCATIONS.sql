@@ -1,0 +1,8 @@
+-- SQLite
+-- Consultado tabela de funçonarios com mais de uma LOCATION
+SELECT E.NAME AS 'Nome', FROM LOCATIONS AS L
+    INNER JOIN EMPLOYESS AS E ON (L.EMPLOYEE_ID = E.ID)
+    GROUP BY L.EMPLOYEE_ID
+    HAVING COUNT(L.EMPLOYEE_ID) > 1;
+
+SELECT * FROM LOCATIONS;
